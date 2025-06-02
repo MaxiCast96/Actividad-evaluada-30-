@@ -1,45 +1,34 @@
-/* 
-    Campos:
-       titulo
-       descripcion
-       director
-       genero
-       anio
-       durcion
-       imagen
-*/
-
 import { Schema, model } from "mongoose";
 
 const peliculasSchema = new Schema(
     {
         titulo: {
             type: String,
-            require: true,
+            required: true, 
         },
         descripcion: {
             type: String,
-            require: true,
+            required: true,
         },
         director: {
             type: String,
-            require: true,
+            required: true,
         },
         genero: {
             type: String,
-            require: true,
+            required: true,
         },
         anio: {
             type: String,
-            require: true,
+            required: true,
         },
-        duracion:{
+        duracion: {
             type: String,
-            require: true,
+            required: true,
         },
-        imagen:{
+        imagen: {
             type: String,
-            require: true,
+            required: false, 
         }
     },
     {
